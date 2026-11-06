@@ -1,0 +1,20 @@
+{
+  "name": "pi-memo",
+  "version": "1.0.0",
+  "description": "PI 课题/学生管理桌面备忘录（半透明常驻浮层）",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "check": "node --check main.js && node --check preload.js && node --check renderer/app.js"
+  },
+  "author": "Taio-ZHANG",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^44.7.0"
+  },
+  "homepage": "https://github.com/Taio-ZHANG/research-memo",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Taio-ZHANG/research-memo.git"
+  }
+}

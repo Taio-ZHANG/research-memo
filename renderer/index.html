@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:" />
+  <title>课题备忘</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app" id="app">
+    <header class="titlebar" id="titlebar">
+      <div class="brand">
+        <span class="logo"></span>
+        <span class="title">课题备忘</span>
+      </div>
+      <span class="mini-stats" id="miniStats"></span>
+      <div class="win-actions">
+        <button class="icon-btn" id="btn-top" title="切换置顶（Ctrl+Alt+M 显示/隐藏）">
+          <svg viewBox="0 0 24 24" width="14" height="14"><path d="M12 3l3 3-2 2v3l4 2v2l-5-1.5V19l2 2H10l2-2v-5.5L7 15v-2l4-2V8L9 6l3-3z" fill="currentColor"/></svg>
+        </button>
+        <button class="icon-btn" id="btn-collapse" title="收起 / 展开">
+          <svg viewBox="0 0 24 24" width="14" height="14"><path d="M6 15l6-6 6 6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <button class="icon-btn danger" id="btn-close" title="隐藏到托盘">
+          <svg viewBox="0 0 24 24" width="14" height="14"><path d="M7 7l10 10M17 7L7 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+    </header>
+
+    <section class="body" id="pageBody">
+      <div class="members-strip" id="membersStrip"></div>
+      <main class="content" id="content"></main>
+    </section>
+
+    <button class="fab" id="fab" title="新建任务">+</button>
+  </div>
+
+  <div class="modal-mask" id="modalMask" hidden>
+    <div class="modal" id="modal"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
